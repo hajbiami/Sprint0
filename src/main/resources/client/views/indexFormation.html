@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>VUE</title>
+</head>
+<body>
+<table>
+<tr>
+<th>Code Formation</th>
+<th>Nom Formation</th>
+<th>Details</th>
+<th>Update</th>
+<th>Delete</th>
+</tr>
+
+<tr ng-repeat="formation in formations">
+	<td>{{formation.codeFormation}}</td>
+	<td>{{formation.nomFormation}}</td>
+	<td><a href="#/afficherFormation/{{formation.codeFormation}}">More Details</a></td>
+    <td><a href="#/modifierFormation/{{formation.codeFormation}}">Update</a></td>
+	<td><a href="#/supprimerFormation/{{formation.codeFormation}}">Delete</a></td>
+	</tr>
+</table>
+<br><a href="#/ajouterFormation">Ajouter Formation</a><br><br>
+<a href="#/authentification">Deconnexion</a>
+</body>
+</html>
